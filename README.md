@@ -257,6 +257,7 @@
 
 
 3. Created this hero section to render the image. Used object-fit as contain to fit the full image in the container
+   <img width="945" alt="image" src="https://github.com/HariChandana2000/Amazon-UI-Clone/assets/44540754/c4b1c65d-fc60-4e9c-a501-2c84ac9fbce3"><br>
    HTML Code:<br>
    ```
    <section class="hero">
