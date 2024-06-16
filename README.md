@@ -277,4 +277,208 @@
         height: auto;
         object-fit: contain;
       }
-  </pre>
+  </pre><br><br>
+
+
+4. Created Shopping category container in which display flex is used to arrange the cards. Within each card display flex in column direction is used to arrange the h3, img     and a elements in vertical direction. Moreover transition property is used to zoom the card on hover.<br>
+   HTML Code:<br>
+   ```
+   <section class="categories">
+      <div class="card">
+        <h3>Shop Laptops & Tables</h3>
+        <img src="images/laptop-tables.png" alt="laptops and tables" />
+        <a href="#">Shop now</a>
+      </div>
+      <div class="card">
+        <h3>Shop Smartwatches</h3>
+        <img src="images/smart-watches.png" alt="smart-watches" />
+        <a href="#">Shop now</a>
+      </div>
+      <div class="card">
+        <h3>Create with Strip Lights</h3>
+        <img src="images/strip-lights.png" alt="strip-lights" />
+        <a href="#">Shop now</a>
+      </div>
+      <div class="card">
+        <h3>Home Refresh Ideas</h3>
+        <img src="images/home-refresh.png" alt="home-refresh" />
+        <a href="#">Shop now</a>
+      </div>
+    </section>
+   ```
+   
+   CSS Properties:
+   <pre>
+      .categories {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        background-color: rgb(244, 241, 241);
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        overflow: hidden;
+      }
+      
+      .card {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 285px;
+        height: 400px;
+        padding: 30px;
+        cursor: pointer;
+        white-space: nowrap;
+        transform: scale(1);
+        transition: transform 0.7s ease-in-out;
+      }
+      
+      .card:hover {
+        transform: scale(1.1);
+      }
+      
+      .card > img {
+        width: 100%;
+        height: 240px;
+        margin-top: 10px;
+        object-fit: cover;
+      }
+      
+      .card > a {
+        color: blue;
+        text-decoration: none;
+        margin-top: 20px;
+      }
+      
+      .card > a:hover {
+        color: #c7511f;
+        text-decoration: underline;
+      }
+   </pre><br><br>
+
+
+5. Created this div element with paragraph element in it. Used onclick attribute on the div element to go to the top on click and the text color changes to light grey on       hover.<br>
+   HTML Code:
+   ```
+   <div class="back-to-top" onclick="window.location.href='#'">
+      <p>Back to top</p>
+    </div>
+   ```
+
+   CSS Properties Used:
+   <pre>
+      .back-to-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #354557;
+        color: white;
+        width: 100%;
+        height: 60px;
+        font-size: 14.5px;
+        font-weight: 700;
+        cursor: pointer;
+        padding: 20px;
+      }
+      
+      .back-to-top:hover {
+        color: #ccc;
+      }
+   </pre><br><br>
+
+
+6. Created this footer element with display property as flex. Each element in this footer is separate container with p and ul elements arranged in flex column direction.<br>
+   HTML Code:<br>
+   ```
+   <footer>
+      <div class="footer-item">
+        <p>Get to Know Us</p>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press Release</a></li>
+          <li><a href="#">Amazon Science</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <p>Connect with Us</p>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <p>Connect with Us</p>
+        <ul>
+          <li><a href="#">Sell on Amazon</a></li>
+          <li><a href="#">Sell under Amazon Accelerator</a></li>
+          <li><a href="#">Protect and Build Your Brand</a></li>
+          <li><a href="#">Amazon Global Selling</a></li>
+          <li><a href="#">Become an Affiliate</a></li>
+          <li><a href="#">Fulfillment by Amazon</a></li>
+          <li><a href="#">Advertise Your Products</a></li>
+          <li><a href="#">Amazon Pay on Merchants</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <p>Let Us Help You</p>
+        <ul>
+          <li><a href="#">COVID-19 and Amazon</a></li>
+          <li><a href="#">Your Account</a></li>
+          <li><a href="#">Return Centre</a></li>
+          <li><a href="#">100% Purchase Protection</a></li>
+          <li><a href="#">Amazon App Download</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </footer>
+   ```
+
+   CSS Properties Used:<br>
+   <pre>
+      footer {
+        display: flex;
+        justify-content: space-around;
+        background-color: #232f3e;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+      }
+      
+      .footer-item {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        line-height: 25px;
+      }
+      
+      .footer-item p {
+        font-size: 16.5px;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+      
+      .footer-item ul {
+        list-style: none;
+      }
+      
+      .footer-item ul > li > a {
+        color: #ccc;
+        text-decoration: none;
+      }
+      
+      .footer-item ul > li > a:hover {
+        text-decoration: underline;
+      }
+      
+      .footer-item ul > li > a:visited {
+        color: #ccc;
+        text-decoration: none;
+      }
+   </pre>
+   
